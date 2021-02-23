@@ -1,0 +1,119 @@
+14. Validate Admin Username and Password
+
+Service Type: POST
+
+API: https://oij8kqktjl.execute-api.ap-south-1.amazonaws.com/dev/v1/adminlogin/upsert/I
+x-api-key: FrXKXBR6snan7ne7D2PZuagAz60eBteu8LEF67fH
+
+Parameter: N/A
+
+Sample Body: 
+
+{
+    "userName" : "AdminOne",
+    "password" : "AdminPassword"
+}
+
+Response: 
+
+Success
+-------------------------
+{
+    "adminInfo": {
+        "adminId": 10001
+    },
+    "message": "User name and password validated and OTP sent successfully to the admin.",
+    "status": "200"
+}
+Admin login api
+
+
+
+
+
+
+
+Admin search page api
+ Admin Client Search
+
+Service Type: POST
+
+API: https://uo0emj301l.execute-api.ap-south-1.amazonaws.com/dev/v1/adminsearch/upsert/S
+x-api-key: LWotbtXS4XajPBpAedzNY3kOCw9Q0d028AFgVEBj
+
+Parameter: N/A
+
+Sample Body: 
+
+{
+   "clientInfo":{
+      "clientId":"736612022108251984",
+      "firstName":"Ramalingam",
+      "middleName":"",
+      "lastName":"Nair",
+	  "dateOfBirth":"20/01/2026",
+      "identityInfo":[
+         {
+            "idType":"Adhar",
+            "idNumber":"1234567890"
+         },
+         {
+            "idType":"Passport",
+            "idNumber":"23456787-567898765"
+         }
+      ]
+   }
+}
+
+Response: 
+
+Success
+-------------------------
+{
+    "beneficiaryInfo": [
+        {
+            "title": "Sir",
+            "firstName": "Vivian",
+            "middleName": "Ultimate",
+            "lastName": "Richards",
+            "addrLine1": "63/6255 PLING",
+            "addrLine2": "PLYMOUTH ROAD, KAROOR",
+            "city": "KOCHI",
+            "state": "KERALA",
+            "country": "INDIA",
+            "zip": "682020",
+            "relationship": "Son",
+            "phoneNo": "+917994929217",
+            "emailId": "vivian.richards@yahoom",
+            "idType": "Adhar",
+            "idNumber": "1234567890"
+        },
+        {
+            "title": "Ms",
+            "firstName": "Vivanta",
+            "middleName": "Ultimate",
+            "lastName": "Richards",
+            "addrLine1": "63/6255 PLING",
+            "addrLine2": "PLYMOUTH ROAD, KAROOR",
+            "city": "KOCHI",
+            "state": "KERALA",
+            "country": "INDIA",
+            "zip": "682020",
+            "relationship": "Daughter",
+            "phoneNo": "+917994929314",
+            "emailId": "vivian.richards@yahoom",
+            "idType": "Adhar",
+            "idNumber": "1234567891"
+        }
+    ],
+    "clientId": "736612022108251984",
+    "servicesInfo": {
+        "servicesInfo": [
+            "TEMPLATE",
+            "LOI",
+            "WLS"
+        ]
+    },
+    "status": "200",
+    "message": "ok"
+}

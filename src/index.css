@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+  /* Form Component */
+
+.main{
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 30px solid lightgrey;
+}
+.main2{
+  margin: 10px;
+}
+
+
+/* Login Component */
+
+.main-login{
+  margin-top: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
+  align-items: center;
+  border: 30px solid rgb(245, 212, 212);
+  border-radius: 10px;
+}
+.login-area{
+  margin-top: 50px;
+  margin-left: 600px;
+  margin-right: 600px;
+  width: 150px;
+  height: 80px;
+  background-color: rgb(163, 163, 189);
+  color: rgb(112, 112, 245);
+  font-size: 30px;
+  text-align: center;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
